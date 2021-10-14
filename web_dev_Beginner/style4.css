@@ -1,0 +1,67 @@
+/* 기본세팅 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 여러개의 선택자 예시 */
+#first.one.two {
+  color: red;
+}
+
+/* 복합선택자 */
+
+/* 후손 */
+.container .user-name {
+  color: red;
+}
+
+/* 자식 */
+.container > .item {
+  background-color: blue;
+}
+
+/* 인접형제 */
+h3 + h4 {
+  color: aqua;
+}
+
+/* 형제 */
+h3 ~ h5 {
+  color: red;
+}
+
+/* 가상선택자 */
+
+/* 호버 */
+button:hover {
+  background-color: green;
+}
+
+/* active */
+.activated:active {
+  background-color: gray;
+}
+
+/* fucus */
+input {
+  width: 500px;
+}
+
+input:focus {
+  background-color: red;
+}
+
+/* link, visited */
+a {
+  color: black;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}

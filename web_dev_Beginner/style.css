@@ -1,0 +1,47 @@
+/* 기본세팅 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: rgba(197, 93, 161, 0.3);
+}
+
+html {
+  font-size: 10px;
+}
+/* 기본세팅 */
+
+h1 {
+  color: red;
+  font-size: 3em; /*  중요! 최상위 html 폰트사이즈 10px 를 기준으로 잡음*/
+}
+
+.app {
+  font-size: 4rem;
+  background-color: #7e57c2;
+  width: 50vw;
+  height: 50vh;
+}
+
+.font-color {
+  font-size: 4rem;
+  /* color: rgba(197, 93, 161, 0.3); */
+  color: var(--pink); /* var 루트 변수 사용하기 */
+}
+
+#first {
+  font-size: 4rem;
+  color: blue;
+}
+
+.one.two.three {
+  font-size: 3rem;
+  background-color: aqua;
+}
+
+ul > li {
+  font-size: 4em;
+}
