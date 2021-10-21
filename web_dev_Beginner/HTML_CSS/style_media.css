@@ -1,0 +1,8 @@
+@media only all and (max-width: 400px) {
+  h1 {
+    background-color: brown;
+  }
+  h2 {
+    display: none;
+  }
+}

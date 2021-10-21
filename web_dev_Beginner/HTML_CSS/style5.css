@@ -1,0 +1,36 @@
+/* 기본세팅 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+/* 기본세팅 */
+
+div {
+  margin: 50px;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F123%2F2016%2F03%2F10%2F160310100349_kospi007_99_20160310110005.jpg&type=sc960_832);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: auto;
+  /*
+  backgrond: scroll center / contain no-repeat
+    url(https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F123%2F2016%2F03%2F10%2F160310100349_kospi007_99_20160310110005.jpg&type=sc960_832);
+    attachment auto / position auto;
+    */
+
+  font-size: 2rem;
+}
+
+input {
+  font-size: 1.2rem;
+  line-height: 2;
+}
