@@ -172,3 +172,82 @@ while (k <= 50) {
 
 // // third가 두번째로 큰수라 가정
 // const thirdAnswer = (...)
+
+
+
+// for 반복문
+for (let i = 1; i < 11; i++) {
+    console.log(i);
+}
+
+// for 5의 배수 출력
+for (let i = 1; i < 51; i++) {
+    if (i % 5 === 0) {
+        console.log(i);
+    }
+}
+
+
+const arr3 = [6,7,8,9];
+for (let index in arr3) {
+    console.log(`index: ${index} => ${arr3[index]}`);
+}
+
+for (let item of arr3) {
+    console.log(item);
+}
+
+const jsonArr = {email: "dummy", password: "a123"};
+for (let key in jsonArr) {
+    console.log(key, jsonArr[key]);
+}
+
+function bmi(height, weight) {
+    let meterHeight = height / 100;
+    let bmiIndex = weight / (meterHeight ** 2)
+    return bmiIndex
+}
+
+const myBmi = bmi(177, 77);
+console.log(myBmi);
+
+
+
+// 객체지향형
+
+const userInfo2 = {
+	name: "홍길동",
+	birth: "2020-10-10",
+	getName: function () {
+        return this.name   // this는 화살표 함수에서는 에러!  익명함수 또는 기본 함수에서만 작동!
+	}
+}
+console.log(userInfo2.name);
+
+
+const obj = {
+    nickname: "하하",
+    age: 22,
+    say: function () {
+        console.log(this);
+        console.log(`제 이름은 ${this.nickname}, 나이는 ${this.age}살 입니다.`);
+    },
+};
+obj.say();
+
+
+
+const objectNum = {
+    setNumber : function (num1, num2) {
+        this.num1 = num1;
+        this.num2 = num2;
+    },
+    sum: function () {
+        return this.num1 + this.num2;
+    },
+    multiply: function () {
+        return this.num1 * this.num2;
+    },
+};
+
+console.log(objectNum.setNumber(3,4))
